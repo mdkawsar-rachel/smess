@@ -1,10 +1,14 @@
 import React from 'react'
+import { CssBaseline } from '@mui/material'
+import Header from './header'
 
 const about = () => {
   return (
-    <div>
-        <h1>About</h1>
-    </div>
+    <>
+    <CssBaseline/>
+      <Header/>
+        <h1 align='center'>About</h1>
+    </>
   )
 }
 

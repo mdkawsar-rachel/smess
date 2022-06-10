@@ -1,8 +1,7 @@
 import React from 'react';
-import {Typography, Table,TableRow, TableCell, tableCellClasses, AppBar, CssBaseline , Toolbar, Container} from '@mui/material'
-import BasicTabs from './Tab';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import about from './pages/about';
+import About from './pages/about';
+import Home from './pages/home';
 
 const App = () => {
 
@@ -10,32 +9,10 @@ const App = () => {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/about' element={<about/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/' element={<Home/>}/>
       </Routes>
     </BrowserRouter>
-      <CssBaseline/>
-      <AppBar position='relative' elevation={0}>
-      <Toolbar>
-          <Table
-        sx={{
-          [`& .${tableCellClasses.root}`]: {
-            borderBottom: "none"
-          }
-        }}
-      >
-              <TableRow>
-                  <TableCell align='center'>
-                      <Typography variant='h4'>
-                      Smess
-                      </Typography>
-                  
-                  </TableCell>
-              </TableRow>
-          </Table>
-      </Toolbar>
-      </AppBar>
-      <BasicTabs/>
-
     </>
   );
 }
