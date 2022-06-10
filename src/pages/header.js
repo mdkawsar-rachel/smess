@@ -4,7 +4,7 @@ import {Typography, Table,TableRow, TableCell, tableCellClasses, AppBar , Toolba
 const logoFont = createTheme({
   typography: {
     fontFamily: [
-      'Madrigal'
+      'AquireBold'
     ],
 },});
 
@@ -23,7 +23,7 @@ const header = () => {
               <TableRow>
                   <TableCell align='center'>
                   <ThemeProvider theme={logoFont}>
-                      <Typography variant='h4'>
+                      <Typography variant='h3'>
                       Smess
                       </Typography>
                   </ThemeProvider>
